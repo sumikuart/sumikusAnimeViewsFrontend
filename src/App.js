@@ -1,24 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Switch, NavLink} from "react-router-dom";
+
+
+// Context
+import ThemeContextProvider from './context/theme.context';
+
+// Components
+import NavigationsBar from './component/globalcomponents/navigation/navigation.component';
+import FooterComponent from './component/globalcomponents/footer/footer.component';
+import BaseThemeComponent from './component/globalcomponents/baseTheme/baseTheme.component';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <ThemeContextProvider>
+          
+          <BaseThemeComponent />
+
+          <header>
+            <NavigationsBar />
+          </header>
+          <main>
+            <h1 style={{textAlign:'center'}}>Sumiku's Anime Views</h1>
+          </main>
+          <footer>
+            <FooterComponent />
+          </footer>
+
+        </ThemeContextProvider>
+      </Router>
     </div>
   );
 }
