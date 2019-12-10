@@ -10,7 +10,7 @@ const ThemeContextProvider = (props) =>{
 
     const [theme, setTheme] = useState([
         {sakura: {name:'sakura',darkerBackdrop:'#DF7494',lightBackdrop:'#fbdcdc', backdrop:'#F8AFAF', syntax:'#333'} },
-        {desert: {name:'desert',darkerBackdrop:'#dfa574',lightBackdrop:'#f9e9d2', backdrop:'#555', syntax:'#333'} } 
+        {desert: {name:'desert',darkerBackdrop:'#c78349',lightBackdrop:'#f9e9d2', backdrop:'#e1b590', syntax:'#333'} } 
     ])
 
 

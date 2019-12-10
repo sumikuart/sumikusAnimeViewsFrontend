@@ -16,7 +16,7 @@ const BaseThemeComponent = () => {
     const activeTheme = themeToggler.isSakuraTheme ? theme[0].sakura : theme[1].desert;
 
     return(
-        <div className='baseThemeStyle' style={{ background:activeTheme.lightBackdrop, color: activeTheme.syntax}}>
+        <div className={'baseThemeStyle ' +activeTheme.name} style={{color: activeTheme.syntax}}>
 
 
         </div>

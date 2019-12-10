@@ -5,4 +5,24 @@
     min-width:100%;
     min-height: 100%;
     z-index: -1;
+} 
+
+.baseThemeStyle.sakura{
+    background-image: url("../../../assets/sakuraBackdrop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height: 100%;
+    opacity: 0.2;
+
+}
+
+.baseThemeStyle.desert{
+    background-image: url("../../../assets/desertBackdrop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100%;
+    height: 100%;
+    opacity: 0.2;
+
 }

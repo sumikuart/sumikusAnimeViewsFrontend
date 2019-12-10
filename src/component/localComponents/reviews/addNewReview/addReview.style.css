@@ -1,0 +1,81 @@
+.addReviewStyle{
+    width:70%;
+    margin:0 auto;
+    min-height: 400px;
+}
+
+.addReviewStyle .addReviewForm {
+    width:90%;
+    margin: 0 auto;
+    padding: 30px 0;
+    border-bottom: 2px solid black;
+    margin:0 30px
+}
+
+.addReviewStyle .addReviewForm label {
+    display: block;
+    font-size: 18px;
+    font-weight: bolder;
+    padding:10px 0;
+    margin: 10px;
+}
+
+
+.addReviewStyle .addReviewForm input[type='text'] {
+    padding:10px 0;
+    margin: 10px;
+    width:30%;
+}
+
+
+.addReviewStyle .addReviewForm select {
+    display: block;
+    font-size: 18px;
+    width:50px;
+    font-weight: bolder;
+    padding-left:10px;
+}
+
+.addReviewStyle .addReviewForm .storyDescriptionAddReview {
+    width:100%;
+    height:100px;
+    font-size: 18px;
+}
+
+.addReviewStyle .addReviewForm .reviewDescriptionAddReview {
+    width:100%;
+    height:200px;
+    font-size: 18px;
+}
+
+.addReviewStyle .addReviewForm input.recomendationReview {
+    width:100%;
+}
+
+.addReviewStyle .addReviewForm input[type='file']{
+    padding:10px;
+} 
+
+
+.addReviewStyle .submitReviewButton {
+    width:60%;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+
+.addReviewStyle .submitReviewButton .styler {
+    padding: 30px;
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 140px;
+}
+
+
+
+.addReviewStyle .submitReviewButton .styler:hover{
+    border-left:10px solid black;
+    border-right:10px solid black;
+}

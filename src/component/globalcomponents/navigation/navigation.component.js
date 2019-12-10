@@ -29,22 +29,22 @@ const NavigationsBar = () => {
 
             <nav>
                 <ul >
-                 <li>Blogs
+                <li><NavLink to='/review' style={{color: activeTheme.syntax}}>Reviews</NavLink></li>
+                 <li> <p>Blogs</p>
                         <ul style={{ background:activeTheme.darkerBackdrop, color: activeTheme.syntax}}>
                             <li><NavLink to='/teset' style={{color: activeTheme.syntax}}>New Blogs</NavLink></li>
                             <li><NavLink to='/' style={{color: activeTheme.syntax}}>Highs Voted Blogs</NavLink></li>
-                            <li><NavLink to='/' style={{color: activeTheme.syntax}}>Complete List</NavLink></li>
+                            <li><NavLink to='/' style={{color: activeTheme.syntax}}>All Blog Posts</NavLink></li>
                         </ul>
                     </li>
-                    <li>Reviews
-                        <ul style={{ background:activeTheme.darkerBackdrop, color: activeTheme.syntax}}>
-                            <li><NavLink to='/' style={{color: activeTheme.syntax}}>New Reviews</NavLink></li>
-                            <li><NavLink to='/' style={{color: activeTheme.syntax}}>High Score</NavLink></li>
-                            <li><NavLink to='/' style={{color: activeTheme.syntax}}>Complete List</NavLink></li>
+                    <li><p>About</p>
+                         <ul style={{ background:activeTheme.darkerBackdrop, color: activeTheme.syntax}}>
+                            <li><NavLink to='/' style={{color: activeTheme.syntax}}>My Profile</NavLink></li>
+                            <li><NavLink to='/' style={{color: activeTheme.syntax}}>Seen Anime</NavLink></li>
+                            <li><NavLink to='/' style={{color: activeTheme.syntax}}>About</NavLink></li>
                         </ul>
                     </li>
                     <li><NavLink to='/' style={{color: activeTheme.syntax}}>Forum</NavLink></li>
-                    <li><NavLink to='/' style={{color: activeTheme.syntax}}>About</NavLink></li>
                     <li><NavLink to='/' style={{color: activeTheme.syntax}}>Login</NavLink></li>
                     <li><NavLink to='/' style={{color: activeTheme.syntax}}>Sign Up</NavLink></li>
                 </ul>
