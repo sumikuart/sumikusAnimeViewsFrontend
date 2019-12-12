@@ -9,6 +9,7 @@ import './reviewoverview.style.css'
 
 // Context:
 import { ThemeContext } from '../../../context/theme.context'
+import { UserContext } from '../../../context/user.context'
 
 // image
 import banner from '../../../assets/reviewbanner.jpg'
@@ -22,6 +23,7 @@ const ReviewOverviewComponent = () => {
     const [completeReviewList ,setCompleteReviewList] = useState([])
     const [loading ,setLoading] = useState(false)
 
+    const { username, onlineStatus, Logon, usertype } = useContext(UserContext)
 
         useEffect(() => {
             axios.get('http://localhost:8888/review/getall')
@@ -34,6 +36,32 @@ const ReviewOverviewComponent = () => {
         },[])
 
 
+        console.log(usertype)
+const userDeff = (e) => {
+if(usertype > 0) {
+    return(
+        <div className='reviewNav'>
+            <ul>
+                <li><NavLink to='./review/complete'>Get the Complete List</NavLink></li>
+                <li><NavLink to='./review/add'> Add New Review</NavLink></li>
+            </ul>
+        </div>
+
+)
+
+}
+else {
+
+    return(
+        <div>
+
+        </div>
+    )
+
+}
+}
+
+
 if(loading) {
 
     return (
@@ -43,13 +71,7 @@ if(loading) {
             <p className='headline'>Reviews</p>
 
 
-            <div className='reviewNav'>
-                <ul>
-                    <li><NavLink to='./review/complete'>Get the Complete List</NavLink></li>
-                    <li><NavLink to='./review/add'> Add New Review</NavLink></li>
-                </ul>
-            </div>
-
+            {userDeff()}
 
 
             <div className='newReviewDisplay' style={{ border: '10px solid' + activeTheme.darkerBackdrop}}>

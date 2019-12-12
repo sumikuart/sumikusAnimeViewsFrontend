@@ -54,6 +54,10 @@ width:100%;
     text-decoration: none;
     display: block;
 }
+
+.navStyle nav ul li a span {
+    font-style: italic;
+}
 .navStyle nav ul li p:hover,
 .navStyle nav ul li a:hover{
     border-bottom: 2px solid black;
@@ -76,10 +80,11 @@ display: none;
     width:100%;
     padding-right: 20px;
 }
-
+.navStyle nav ul li:hover > ul p,
 .navStyle nav ul li:hover > ul a {
     display: block;
     padding:8px;
+    cursor: pointer;
     
     
 

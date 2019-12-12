@@ -1,0 +1,65 @@
+.loginStyle{
+    width:70%;
+    margin:0 auto;
+    min-height: 80vh;  
+}
+
+.loginStyle .loginformDiv{
+    width:60%;
+}
+
+.loginStyle .imgLoginDiv {
+    width:30%;
+}
+
+
+.loginStyle .imgLoginDiv img {
+    display: block;
+    width: 100%;
+    margin: 30px;
+}
+
+.loginStyle .loginformDiv form{
+    margin:30px;
+    margin-left:200px;
+}
+
+.loginStyle .loginformDiv form label{
+    font-weight: bolder;
+    display: block;
+    font-size: 24px;
+    width:100%;
+    margin: 10px auto;
+
+}
+
+.loginStyle .loginformDiv form input[type='text'],
+.loginStyle .loginformDiv form input[type='password']
+ {
+    display: block;
+    width:100%;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.loginStyle .loginformDiv form input[type='submit'] {
+    display: block;
+    width:400px;
+    margin: 30px auto;
+    padding: 20px 0;
+
+    font-size:24px;
+
+    cursor: pointer;
+
+    border-radius: 55px;
+
+}
+
+
+
+.loginStyle .loginformDiv form .keepOnline input{
+    width: 30px;
+    height: 30px;
+    padding-top:10px;
+}

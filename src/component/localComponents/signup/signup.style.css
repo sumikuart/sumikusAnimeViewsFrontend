@@ -1,0 +1,82 @@
+.signUpStyle {
+    width:70%;
+    margin:0 auto;
+    min-height: 400px;
+}   
+
+
+.signUpStyle .signUpContent {
+    width:60%;
+    margin-left:120px;
+    margin-top:30px;
+
+}
+
+.signUpStyle .rightImgContenOfSignUp {
+    width:40%;
+    margin-right:120px;
+}
+
+.signUpStyle .rightImgContenOfSignUp img {
+    width:90%;
+    margin: 30px 0;
+}
+
+
+.signUpStyle .signUpContent form {}
+
+.signUpStyle .signUpContent form label {
+    display: block;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.signUpStyle .signUpContent form p.error,
+.signUpStyle .signUpContent form label span {
+    font-weight: normal;
+    color:red
+}
+
+
+.signUpStyle .signUpContent form input{
+    width:60%;  
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.signUpStyle .signUpContent form  .signUpGrupeOne,
+.signUpStyle .signUpContent form  .signUpGrupeTwo,
+.signUpStyle .signUpContent form .signUpGrupeThree {
+    margin: 40px 0;
+    margin-left:50px;
+}
+
+.signUpStyle .signUpContent form .signUpGrupeThree{}
+
+.signUpStyle .signUpContent form input[type='checkbox'] {
+    display: block;
+    height: 25px;
+    width: 25px;
+    margin-top:8px;
+    margin-left:20px;
+}
+
+.signUpStyle .signUpContent form input[type='submit'] {
+
+    width:30%;
+    margin-left:100px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 25px;
+    color:white;
+    background-color: black;
+    cursor: pointer;
+
+} 
+
+.signUpStyle .signUpContent form .completMessage {
+
+    font-size:24px;
+    font-weight: bolder;
+    margin:30px;
+}
