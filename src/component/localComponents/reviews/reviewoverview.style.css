@@ -12,7 +12,7 @@ min-height: 400px;
 }
 
 .reviewOverviewStyle .reviewNav {
-    width:90%;
+    width:90%; 
     margin: 0 auto;
     margin-top:30px;
 }
@@ -39,6 +39,7 @@ min-height: 400px;
 .reviewOverviewStyle .reviewNav ul li a:hover{
     background-color: rgba(0, 0, 0, 0.300);
 }
+
 
 
 .reviewOverviewStyle .reviewDivHeadline{
@@ -109,6 +110,26 @@ min-height: 400px;
   
 }
 .reviewOverviewStyle .newReviewDisplay .reviewHiglightInfo a:hover{
+    text-decoration: underline;
+}
+
+.reviewOverviewStyle .CompleteReviewDisplay {
+    width: 30%;
+    border-radius: 25px;
+    margin: 10px auto;
+    cursor: pointer;
+    text-align: center;
+}
+
+.reviewOverviewStyle .CompleteReviewDisplay a {
+    text-decoration: none;
+    color:black;
+    display: block;
+    padding: 5px 0;
+    font-size: 20px;
+}
+
+.reviewOverviewStyle .CompleteReviewDisplay:hover a {
     text-decoration: underline;
 }
 

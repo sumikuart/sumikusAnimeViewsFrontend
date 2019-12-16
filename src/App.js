@@ -15,6 +15,9 @@ import AddReviewComponent from './component/localComponents/reviews/addNewReview
 import SignUpComponent from './component/localComponents/signup/signup.component';
 import LoginComponent from './component/localComponents/login/login.component';
 import UserContextProvider from './context/user.context';
+import ReviewDetailComponent from './component/localComponents/reviews/reviewDetail/reviewDetailpage.component';
+import ReviewListComponent from './component/localComponents/reviews/reviewlist/reviewlist.component';
+import EditReviewComponent from './component/localComponents/reviews/editReview/editReview.component';
 
 function App() {
   return (
@@ -31,6 +34,9 @@ function App() {
           <main>
             <Route exact path='/review' component={ReviewOverviewComponent} />
             <Route exact path='/review/add' component={AddReviewComponent} />
+            <Route exact path='/review/detail/:id' component={ReviewDetailComponent} />
+            <Route exact path='/review/completelist' component={ReviewListComponent} />
+            <Route exact path='/review/edit/:id' component={EditReviewComponent} />
             <Route exact path='/signup' component={SignUpComponent} />
             <Route exact path='/login' component={LoginComponent} />
 

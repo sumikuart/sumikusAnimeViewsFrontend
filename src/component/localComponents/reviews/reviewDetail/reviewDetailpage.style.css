@@ -1,0 +1,146 @@
+.reviewDetailStyle{
+    width:70%;
+    margin:0 auto;
+    min-height: 80vh;  
+    padding-bottom: 20px;
+}
+
+.reviewDetailStyle .introReviewDiv{
+    width:80%;
+    margin: 20px auto;
+    justify-content: space-between;
+}
+
+
+.reviewDetailStyle .introReviewDiv .aboutDetailReviewDiv{
+    width: 55%;
+    border-radius: 25px;
+}
+
+
+.reviewDetailStyle  .underheadline{
+    font-size: 24px;
+    font-weight: bolder;
+    padding-left: 3%;
+    padding-top: 20px; 
+    border-bottom: 2px solid black;
+    margin:0 30px
+}
+
+.reviewDetailStyle .bread{
+    margin:15px;
+    font-size: 20px;
+}
+
+.reviewDetailStyle .introReviewDiv .imgDetailReviewDiv{
+    width: 40%;
+
+}
+
+.reviewDetailStyle .introReviewDiv .imgDetailReviewDiv img{
+    display: block;
+    border: 2px solid black;
+    width: 100%;
+}
+
+.reviewDetailStyle .infoReviewDiv {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+
+.reviewDetailStyle .infoReviewDiv .underheadline{
+    font-size: 24px;
+    font-weight: bolder;
+    padding-left: 3%;
+    padding-top: 20px; 
+    border-bottom: 2px solid black;
+    margin:0 30px
+}
+ 
+.reviewDetailStyle .conclusionReviewDiv {
+    width: 80%;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top:30px;
+
+}
+.reviewDetailStyle .conclusionReviewDiv .scoreReviewDiv {
+    border-radius: 25px;
+    text-align: center;
+
+    width:20%;
+}
+
+.reviewDetailStyle .conclusionReviewDiv .scoreReviewDiv .bread {
+    font-size:32px;
+    font-weight: bolder;
+}
+
+.reviewDetailStyle .conclusionReviewDiv .relateReviewDiv {
+    border-radius: 25px;
+
+    width:70%;
+}
+
+
+.reviewDetailStyle .reviewScoreReviewDiv {
+    width:20%;
+    margin: 0 auto;
+    margin-top:20px;
+    border-radius: 25px;
+    text-align: center;
+
+}
+
+.reviewDetailStyle .reviewScoreReviewDiv p {
+
+    margin:20px;
+    font-weight: bolder;
+}
+
+
+.reviewDetailStyle .reviewNav {
+    width:90%;
+    margin: 20 auto;
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+
+.reviewDetailStyle .reviewNav ul{ 
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviewDetailStyle .reviewNav ul li{
+    list-style: none;
+    width:50%;
+    text-align: center;
+}
+.reviewDetailStyle .reviewNav ul li a{
+    color:black;
+    background-color: rgba(0, 0, 0, 0.100);
+    padding:20px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.reviewDetailStyle .reviewNav ul li a:hover{
+    background-color: rgba(0, 0, 0, 0.300);
+}
+
+.reviewDetailStyle .backToReviewDiv {
+    width:15%;
+    text-align: center;
+    padding:10px;
+    border-radius: 25px;
+    margin-top:20px;
+    margin-left:10px;
+}
+
+.reviewDetailStyle .backToReviewDiv a {
+    color:black;
+    font-size: 18px;
+    font-weight: bolder;
+}

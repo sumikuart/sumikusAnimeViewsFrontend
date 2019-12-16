@@ -1,0 +1,41 @@
+.reviewListStyle{
+    width:70%;
+    margin:0 auto;
+    min-height: 80vh;  
+    padding-bottom: 20px;
+}
+
+.reviewListStyle table {
+    border-collapse: collapse;
+    width:80%;
+    margin: 0 auto;
+    margin-top:30px;
+    text-align: left;
+}
+
+.reviewListStyle table tr {
+    border-bottom: 2px solid black;
+}
+
+
+.reviewListStyle table tr:hover {
+    background-color: #00000031;
+}
+
+.reviewListStyle table tr th {
+    font-size: 24px;
+    font-weight: bolder;
+    padding-left:10px
+}
+
+.reviewListStyle table tr td {
+    font-size: 20px;
+    padding: 10px 0;
+    padding-left: 20px;
+}
+
+.reviewListStyle table tr td a {
+    color:black;
+}
+
+.reviewListStyle tr:nth-child(even) {background-color: #00000015;}

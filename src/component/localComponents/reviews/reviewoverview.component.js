@@ -42,7 +42,6 @@ if(usertype > 0) {
     return(
         <div className='reviewNav'>
             <ul>
-                <li><NavLink to='./review/complete'>Get the Complete List</NavLink></li>
                 <li><NavLink to='./review/add'> Add New Review</NavLink></li>
             </ul>
         </div>
@@ -73,6 +72,9 @@ if(loading) {
 
             {userDeff()}
 
+            <div className='CompleteReviewDisplay' style={{ background: activeTheme.darkerBackdrop, border: '10px solid' + activeTheme.darkerBackdrop}}>
+                    <NavLink to='/review/completelist'> Get all Reviews </NavLink>
+            </div>
 
             <div className='newReviewDisplay' style={{ border: '10px solid' + activeTheme.darkerBackdrop}}>
                 <p className='reviewDivHeadline'>Highlighted Review</p>
@@ -94,10 +96,12 @@ if(loading) {
                         
                         <p className='reviewHighlightinfo'><span>Short Review-Preview: </span>{completeReviewList[completeReviewList.length -1].review}</p>
 
-                        <NavLink to={'./review/' + completeReviewList[completeReviewList.length -1].name}>Read More...</NavLink>
+                        <NavLink to={'./review/detail/' + completeReviewList[completeReviewList.length -1]._id}>Read More...</NavLink>
                 </div>
 
             </div>
+
+        
 
             <div className='flex extraReviewsDiv'>
 
@@ -111,6 +115,7 @@ if(loading) {
                 </div>
 
             </div>
+
             
 
         </div>

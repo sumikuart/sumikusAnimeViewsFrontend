@@ -47,6 +47,7 @@ const NavigationsBar = () => {
                     <li><NavLink to='/' style={{ color: activeTheme.syntax }}>Forum</NavLink></li>
                     <li><span>{username}</span>
                         <ul style={{ background: activeTheme.darkerBackdrop, color: activeTheme.syntax }}>
+                                <li><NavLink to='/' style={{ color: activeTheme.syntax }}>Profile</NavLink></li>
                                 <li><NavLink to='/' style={{ color: activeTheme.syntax }}>Account</NavLink></li>
                                 <li><NavLink to='/' style={{ color: activeTheme.syntax }}>Settings</NavLink></li>
                                 <li><p onClick={() => Logon('',0)}>Log Out</p></li>
