@@ -1,0 +1,30 @@
+.termSyle {
+    width:70%;
+margin:0 auto;
+min-height: 400px;
+padding-bottom: 30px;
+}
+
+.termSyle .termContent {
+    font-size:34px;
+    font-weight: bolder;
+    margin: 30px;
+    text-align: center;
+}
+.termSyle .termContent .flex {
+    justify-content: space-between;
+    width:100%;
+}
+
+.termSyle .termContent .flex img {
+    width:30%;
+}
+.termSyle .termContent .flex p {
+    margin-top:50px;
+}
+.termSyle .termContent img{
+    display: block;
+    width:80%;
+    margin: 0 auto;
+    margin-top:20px;
+}

@@ -52,7 +52,7 @@ if(usertype > 0) {
     return(
         <div className='reviewNav'>
             <ul>
-                <li><NavLink to='./review/add'> Add New Review</NavLink></li>
+                <li><NavLink to='/review/add'> Add New Review</NavLink></li>
             </ul>
         </div>
 

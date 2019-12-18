@@ -85,6 +85,7 @@ display: none;
     display: block;
     padding:8px;
     cursor: pointer;
+
     
     
 
@@ -92,6 +93,7 @@ display: none;
 
 .navStyle nav ul li:hover > ul a:hover {
     border-bottom: 2px solid black;
+    
 }
 
 

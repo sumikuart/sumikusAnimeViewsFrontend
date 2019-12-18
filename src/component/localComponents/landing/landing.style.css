@@ -1,0 +1,103 @@
+.landingpageStyle {
+    width:70%;
+margin:0 auto;
+min-height: 400px;
+padding-bottom: 30px;
+}
+
+.landingpageStyle .frontContent {
+   
+}
+
+
+.landingpageStyle .frontContent .intro {
+    width:70%;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top:20px;
+
+}
+
+.landingpageStyle .frontContent .intro img.wave{
+ margin: 30px;
+ width:20%;
+ height:350px;
+
+ display: block;
+}
+
+.landingpageStyle .frontContent .intro .linkintro {
+    width:30%;
+    border-radius: 25px;
+    height:500px;
+}
+
+.landingpageStyle .frontContent .intro .textintro {
+    width:65%;
+    border-radius: 25px;
+}
+
+.landingpageStyle .frontContent  .underHeadline{
+    border-bottom: 2px solid black;
+    padding: 20px 20px 0px 20px;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.landingpageStyle .frontContent .intro .textintro .bread {
+    font-size: 22px;
+    line-height: 2;
+    padding:10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.landingpageStyle .frontContent .intro .textintro .bread span {
+    display: block
+}
+
+
+.landingpageStyle .frontContent .intro .textintro .bread img.wave {
+    width:350px;
+    margin: 0 auto;
+}
+
+.landingpageStyle .frontContent .intro .textintro .bread img.emote {
+    width:100%;
+    margin:0;
+}
+
+.landingpageStyle .frontContent .intro .linkintro{
+
+}
+
+.landingpageStyle .frontContent .intro .linkintro ul {
+    margin:30px;
+}
+
+.landingpageStyle .frontContent .intro .linkintro ul li{}
+
+
+.landingpageStyle .frontContent .intro .linkintro ul li a{
+    color:black;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.landingpageStyle .frontContent .intro .linkintro ul li a:hover {
+    text-decoration: underline;
+}
+
+.landingpageStyle .frontContent .intro .linkintro img{
+    width:100%;
+    display: block;
+}
+
+.landingpageStyle .biganimeimg {}
+
+.landingpageStyle .frontContent .intro .linkintro .biganimeimg  {
+    width:220%;
+    margin-top:0px;
+    margin-left:30%;
+
+}

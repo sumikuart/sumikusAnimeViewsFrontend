@@ -116,16 +116,24 @@
     list-style: none;
     width:50%;
     text-align: center;
+    margin-left:200px;
 }
+
+.reviewDetailStyle .reviewNav ul li p,
 .reviewDetailStyle .reviewNav ul li a{
     color:black;
     background-color: rgba(0, 0, 0, 0.100);
+    display: block;
     padding:20px;
+    width:30%;
     text-decoration: none;
     border-radius: 25px;
     transition: 0.5s;
+    cursor: pointer;
+
 }
 
+.reviewDetailStyle .reviewNav ul li p:hover,
 .reviewDetailStyle .reviewNav ul li a:hover{
     background-color: rgba(0, 0, 0, 0.300);
 }
@@ -143,4 +151,58 @@
     color:black;
     font-size: 18px;
     font-weight: bolder;
+}
+
+
+
+.reviewDetailStyle .deleteConfirm {
+    width:30%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.reviewDetailStyle .deleteConfirm.hide {
+    display: none;
+}
+
+.reviewDetailStyle .deleteConfirm.show {
+    display: block;
+}
+
+.reviewDetailStyle .deleteConfirm span {
+    font-size:20px;
+    font-weight: bolder;
+    color:red;
+}
+
+.reviewDetailStyle .deleteConfirm  .optionboxDelete {
+    width:100%;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+.reviewDetailStyle .deleteConfirm  .chosenDelteBox {
+    font-size: 24px;
+    font-weight: bolder;
+}
+.reviewDetailStyle .deleteConfirm  .optionboxDelete  .deleteYes, 
+.reviewDetailStyle .deleteConfirm  .optionboxDelete  .deleteNo {
+    width:45%;
+    padding:10px;
+    background-color: rgba(0, 0, 0, 0.096);
+    margin: 10px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.reviewDetailStyle .deleteConfirm  .optionboxDelete  .deleteYes:hover, 
+.reviewDetailStyle .deleteConfirm  .optionboxDelete  .deleteNo:hover {
+    width:45%;
+    padding:10px;
+    background-color: rgba(0, 0, 0, 0.199);
+    margin: 10px;
+    font-weight: bolder;
+    cursor: pointer;
 }

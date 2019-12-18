@@ -10,6 +10,7 @@ import ThemeContextProvider from './context/theme.context';
 import NavigationsBar from './component/globalcomponents/navigation/navigation.component';
 import FooterComponent from './component/globalcomponents/footer/footer.component';
 import BaseThemeComponent from './component/globalcomponents/baseTheme/baseTheme.component';
+import LandingComponent from './component/localComponents/landing/landing.component';
 import ReviewOverviewComponent from './component/localComponents/reviews/reviewoverview.component';
 import AddReviewComponent from './component/localComponents/reviews/addNewReview/addReview.component';
 import SignUpComponent from './component/localComponents/signup/signup.component';
@@ -18,6 +19,7 @@ import UserContextProvider from './context/user.context';
 import ReviewDetailComponent from './component/localComponents/reviews/reviewDetail/reviewDetailpage.component';
 import ReviewListComponent from './component/localComponents/reviews/reviewlist/reviewlist.component';
 import EditReviewComponent from './component/localComponents/reviews/editReview/editReview.component';
+import TermofUseComponent from './component/localComponents/about/termOfUse/termofuse.component';
 
 function App() {
   return (
@@ -32,6 +34,7 @@ function App() {
             <NavigationsBar />
           </header>
           <main>
+            <Route exact path='/' component={LandingComponent} />
             <Route exact path='/review' component={ReviewOverviewComponent} />
             <Route exact path='/review/add' component={AddReviewComponent} />
             <Route exact path='/review/detail/:id' component={ReviewDetailComponent} />
@@ -39,6 +42,7 @@ function App() {
             <Route exact path='/review/edit/:id' component={EditReviewComponent} />
             <Route exact path='/signup' component={SignUpComponent} />
             <Route exact path='/login' component={LoginComponent} />
+            <Route exact path='/about/terms' component={TermofUseComponent} />
 
           </main>
           <footer>

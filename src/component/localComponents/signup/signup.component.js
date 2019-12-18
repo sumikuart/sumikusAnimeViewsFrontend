@@ -1,6 +1,6 @@
 // Main:
 import React, { useContext, useState, useEffect } from 'react';
-import { NavLink } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
 import axios from 'axios';
 
 
@@ -33,6 +33,9 @@ const SignUpComponent = () => {
 
     const [userList, setUserlist] = useState([])
     const [loading ,setLoading] = useState(false)
+
+    let history = useHistory()
+    
 
     useEffect(() => {
       // Chekker om brugenavn og allerede eksister:
@@ -239,6 +242,8 @@ const SignUpComponent = () => {
             setRePassword('')
             setTerms('')
 
+            
+            history.push("/login");
     
         } else {
     
@@ -261,7 +266,7 @@ if(loading) {
 
                 <div className='signUpContent'>
 
-                    <form onSubmit={handelSubmit}>
+                    <form>
 
                         <div className='signUpGrupeOne'>
                             <label>User name: <span>{errorUserName}</span></label>
@@ -284,14 +289,16 @@ if(loading) {
                         </div>
 
                         <div className="flex signUpGrupeThree">
-                            <label>I agree to the Terms of use:</label>
+                            <label>I agree to the <NavLink to='/about/terms'>Terms of use</NavLink>:</label>
                             <input type="checkbox" onChange={handelTermsChange} />
                             <p className='error'>{errorTerms}</p>
                         </div>
 
 
                         <p className='completMessage'>{completeMessage}</p>
-                        <input type="submit" value="Make User" />
+                        <div className='makeuserButton' onClick={handelSubmit}>
+                        <p>Make User</p>
+                        </div>
 
                     </form>
 

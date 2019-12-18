@@ -61,16 +61,18 @@
     margin-left:20px;
 }
 
-.signUpStyle .signUpContent form input[type='submit'] {
+.signUpStyle .signUpContent form .makeuserButton {
 
     width:30%;
     margin-left:100px;
     margin-bottom: 30px;
+    padding: 15px 0;
     border: none;
     border-radius: 25px;
     color:white;
     background-color: black;
     cursor: pointer;
+    text-align: center;
 
 } 
 

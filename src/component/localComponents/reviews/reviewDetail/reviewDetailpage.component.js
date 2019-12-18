@@ -14,7 +14,7 @@ import { UserContext } from '../../../../context/user.context'
 // image
 import banner from '../../../../assets/reviewDetailbanner.jpg'
 
-
+ 
 const ReviewDetailComponent = (props) => {
 
     const { theme, toggleTheme, themeToggler } = useContext(ThemeContext);
@@ -24,7 +24,12 @@ const ReviewDetailComponent = (props) => {
 
     const [loading, setLoading] = useState(false)
 
+    const [activateDelete, setActivateDelete] = useState('hide')
+
     const { username, onlineStatus, Logon, usertype } = useContext(UserContext)
+
+    const [MSG,setMSG] = useState('')
+        
 
     useEffect(() => {
 
@@ -39,6 +44,23 @@ const ReviewDetailComponent = (props) => {
 
     }, [])
 
+    const showDeleteOption = (e) => {
+
+        if(activateDelete == 'hide') {
+            setActivateDelete('show')
+        } else {
+            setActivateDelete('hide')
+        }
+    }
+
+    const deleteReview = (props) => {
+        
+        axios.delete('http://localhost:8888/review/delete/' + completeReview._id)
+            .then( res => console.log(res.data)).then(
+                setMSG('Deleted')
+            )
+
+    }
 
     const userDeff = (e) => {
         if (usertype > 0) {
@@ -46,7 +68,7 @@ const ReviewDetailComponent = (props) => {
                 <div className='reviewNav'>
                     <ul>
                         <li><NavLink to={'/review/edit/' + completeReview._id}> Edit Review</NavLink></li>
-                        <li><NavLink to={'/review/delete/' + completeReview._id}> Delete Review</NavLink></li>
+                        <li><p onClick={showDeleteOption}> Delete Review</p></li>
                     </ul>
                 </div>
 
@@ -83,10 +105,31 @@ const ReviewDetailComponent = (props) => {
 
                 {userDeff()}
 
+                <div className={'deleteConfirm ' + activateDelete} style={{ border: '10px solid' + activeTheme.darkerBackdrop }}>
+
+                    <p>Are you Sure you want to <span>DELETE</span> the</p>
+                    <p className='chosenDelteBox'> {completeReview.name} Review</p>
+
+                    <div className='flex optionboxDelete'>
+
+                        <div className='deleteNo' onClick={showDeleteOption}>
+                            <p>NO!</p>
+                        </div>
+
+                        <div className='deleteYes' onClick={deleteReview}>
+                            <p>YES!</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <p>{MSG}</p>
+
                 <div className='flex introReviewDiv'>
                     <div className='aboutDetailReviewDiv' style={{ border: '10px solid' + activeTheme.darkerBackdrop }} >
                         <p className='underheadline'>About:</p>
                         <p className='bread'>{completeReview.description}</p>
+                        <p className='bread'>Genre: {completeReview.genre}</p>
                     </div>
 
                     <div className='imgDetailReviewDiv'>

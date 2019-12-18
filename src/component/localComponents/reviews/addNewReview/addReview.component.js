@@ -28,7 +28,7 @@ const AddReviewComponent = () => {
     const [addReviewImg, setaddReviewImg] = useState('')
     const [addReviewImgName, setaddReviewImgName] = useState('')
 
-
+  
     const handelImgChange = (e) => {
 
         setaddReviewImgName(e.target.files[0].name)
@@ -67,9 +67,7 @@ const AddReviewComponent = () => {
             res => {
                 console.log(res.statusText)
             }
-            
         )
-
 
         
         setaddReviewName('')
@@ -80,6 +78,8 @@ const AddReviewComponent = () => {
         setaddReviewRecomidations('')
         setaddReviewImg('')
         setaddReviewImgName('')
+
+                    
 
 
     }
@@ -110,7 +110,7 @@ const AddReviewComponent = () => {
                     <option>5</option>
                 </select>
 
-
+ 
                 </div>
        
 

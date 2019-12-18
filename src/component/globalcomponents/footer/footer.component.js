@@ -15,6 +15,10 @@ const FooterComponent = () => {
     const { theme, toggleTheme, themeToggler } = useContext(ThemeContext);
     const activeTheme = themeToggler.isSakuraTheme ? theme[0].sakura : theme[1].desert;
 
+    const sendMSG = (e) => {
+        e.preventDefault()
+    }
+
     return (
         <div className="footerStyle" style={{ background: activeTheme.darkerBackdrop, color: activeTheme.syntax }}>
 
@@ -31,7 +35,7 @@ const FooterComponent = () => {
                 <div className='contactForm'>
                     <p>Contact me:</p>
 
-                    <form>
+                    <form onSubmit={sendMSG}>
                         <div>
                             <div className='left'>
 
@@ -51,7 +55,7 @@ const FooterComponent = () => {
                         </div>
 
 
-                        <input type="submit" value="Send" />
+                        <input type="submit" value="Send [X]" />
                     </form>
                 </div>
             </div>

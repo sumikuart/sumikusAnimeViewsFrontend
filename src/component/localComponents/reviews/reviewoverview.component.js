@@ -101,20 +101,7 @@ if(loading) {
 
             </div>
 
-        
 
-            <div className='flex extraReviewsDiv'>
-
-                <div className='randomReviewDisplay' style={{ border: '10px solid' + activeTheme.darkerBackdrop}}>
-                    <p className='reviewDivHeadline'>Most recent Reviews</p>
-                </div>
-
-
-                <div className='highReviewDisplay' style={{ border: '10px solid' + activeTheme.darkerBackdrop}}>
-                    <p className='reviewDivHeadline'>HigeScore Reviews</p>
-                </div>
-
-            </div>
 
             
 

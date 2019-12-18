@@ -33,7 +33,7 @@ const NavigationsBar = () => {
                     <li> <p>Blogs</p>
                         <ul style={{ background: activeTheme.darkerBackdrop, color: activeTheme.syntax }}>
                             <li><NavLink to='/teset' style={{ color: activeTheme.syntax }}>New Blogs</NavLink></li>
-                            <li><NavLink to='/' style={{ color: activeTheme.syntax }}>Highs Voted Blogs</NavLink></li>
+                            <li><NavLink to='/' style={{ color: activeTheme.syntax }}>Blog Votes</NavLink></li>
                             <li><NavLink to='/' style={{ color: activeTheme.syntax }}>All Blog Posts</NavLink></li>
                         </ul>
                     </li>
@@ -42,6 +42,7 @@ const NavigationsBar = () => {
                             <li><NavLink to='/' style={{ color: activeTheme.syntax }}>My Profile</NavLink></li>
                             <li><NavLink to='/' style={{ color: activeTheme.syntax }}>Seen Anime</NavLink></li>
                             <li><NavLink to='/' style={{ color: activeTheme.syntax }}>About</NavLink></li>
+                            <li><NavLink to='/about/terms' style={{ color: activeTheme.syntax }}>Terms of use</NavLink></li>
                         </ul>
                     </li>
                     <li><NavLink to='/' style={{ color: activeTheme.syntax }}>Forum</NavLink></li>
@@ -63,7 +64,7 @@ const NavigationsBar = () => {
                     <li> <p>Blogs</p>
                         <ul style={{ background: activeTheme.darkerBackdrop, color: activeTheme.syntax }}>
                             <li><NavLink to='/teset' style={{ color: activeTheme.syntax }}>New Blogs</NavLink></li>
-                            <li><NavLink to='/' style={{ color: activeTheme.syntax }}>Highs Voted Blogs</NavLink></li>
+                            <li><NavLink to='/' style={{ color: activeTheme.syntax }}>Blog Votes</NavLink></li>
                             <li><NavLink to='/' style={{ color: activeTheme.syntax }}>All Blog Posts</NavLink></li>
                         </ul>
                     </li>
@@ -72,6 +73,7 @@ const NavigationsBar = () => {
                             <li><NavLink to='/' style={{ color: activeTheme.syntax }}>My Profile</NavLink></li>
                             <li><NavLink to='/' style={{ color: activeTheme.syntax }}>Seen Anime</NavLink></li>
                             <li><NavLink to='/' style={{ color: activeTheme.syntax }}>About</NavLink></li>
+                            <li><NavLink to='/about/terms' style={{ color: activeTheme.syntax }}>Terms of use</NavLink></li>
                         </ul>
                     </li>
                     <li><NavLink to='/' style={{ color: activeTheme.syntax }}>Forum</NavLink></li>
